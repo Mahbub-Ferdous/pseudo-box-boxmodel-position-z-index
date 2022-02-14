@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & Z-Index</title>
+    <style>
+        .swiming div {
+            border: 1px dashed black;
+            width: 300px;
+
+
+        }
+
+        /* static position explain below:*/
+
+        #ring {
+            position: static;
+            /*Static positioned elements are not affected by the top,
+            bottom,
+            left,
+            and right properties. An element with position: static;
+            is not positioned in any special way;
+            it is always positioned according to the normal flow of the page */
+            left: 50px;
+            top: 50px;
+            right: 40px;
+            /*** mainly static e kono top,left,bottom,right kaj kore na ***/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is my Heading</h1>
+        <h1>I am learning Position and Z-index</h1>
+    </section>
+    <section class="swiming">
+        <!-- custom attribute in emmet == section[class="className"] then it will be create auto section with class this is happend with custom attribute system in emmet-->
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+    </section>
+
+</body>
+
+</html>
