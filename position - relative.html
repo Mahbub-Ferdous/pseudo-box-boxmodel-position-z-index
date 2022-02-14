@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - relative</title>
+    <style>
+        .swiming div {
+            border: 1px dashed black;
+            width: 300px;
+
+
+        }
+
+        /* relative position explain below:*/
+
+        #ring {
+            /* An element with position: relative; is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. */
+            position: relative;
+            left: 30px;
+            bottom: -20px;
+            top: 5px;
+
+            /*** mainly relative e amra top,left,bottom,right e tar box k kendro kore sorate parbo and se sore gele tar jaygay key asbena ***/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is my Heading</h1>
+        <h1>I am learning Position and Z-index</h1>
+    </section>
+    <section class="swiming">
+        <!-- custom attribute in emmet == section[class="className"] then it will be create auto section with class this is happend with custom attribute system in emmet-->
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+    </section>
+
+</body>
+
+</html>
