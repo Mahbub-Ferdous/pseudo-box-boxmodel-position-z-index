@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - sticky</title>
+    <style>
+        .swiming div {
+            border: 1px dashed black;
+            width: 300px;
+
+
+        }
+
+        .dummy {
+            background-color: pink;
+            height: 200px;
+        }
+
+        /* absolute position explain below:*/
+
+        #ring {
+            /* An element with position: sticky; is positioned based on the user's scroll position.A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+
+            position: sticky;
+            left: 40px;
+            top: 4px;
+
+
+
+
+            /*** mainly sticky te content ta ekta jaygay giye fixed hoye jay tate top ullekh kore dite hoy ar seta onno kono section e kaj korbena only tar parent er moddhe sticky hoye thakbe ***/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is my Heading</h1>
+        <h1>I am learning Position and Z-index</h1>
+    </section>
+    <section class="swiming">
+        <!-- custom attribute in emmet == section[class="className"] then it will be create auto section with class this is happend with custom attribute system in emmet-->
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    <section>
+        <ul>
+            <li>aaaaaaaaaa</li>
+        </ul>
+        <ul>
+            <li>bbbbbbbbbb</li>
+        </ul>
+        <ul>
+            <li>cccccccccc</li>
+        </ul>
+        <ul>
+            <li>dddddddddd</li>
+        </ul>
+        <ul>
+            <li>eeeeeeeeee</li>
+        </ul>
+        <ul>
+            <li>ffffffffff</li>
+        </ul>
+        <ul>
+            <li>gggggggggg</li>
+        </ul>
+        <ul>
+            <li>hhhhhhhhhh</li>
+        </ul>
+        <ul>
+            <li>iiiiiiiiii</li>
+        </ul>
+        <ul>
+            <li>jjjjjjjjjj</li>
+        </ul>
+        <ul>
+            <li>kkkkkkkkkk</li>
+        </ul>
+        <ul>
+            <li>llllllllll</li>
+        </ul>
+        <ul>
+            <li>mmmmmmmmmm</li>
+        </ul>
+        <ul>
+            <li>nnnnnnnnnn</li>
+        </ul>
+        <ul>
+            <li>oooooooooo</li>
+        </ul>
+        <ul>
+            <li>aaaaaaaaaa</li>
+        </ul>
+        <ul>
+            <li>bbbbbbbbbb</li>
+        </ul>
+        <ul>
+            <li>cccccccccc</li>
+        </ul>
+        <ul>
+            <li>dddddddddd</li>
+        </ul>
+        <ul>
+            <li>eeeeeeeeee</li>
+        </ul>
+        <ul>
+            <li>ffffffffff</li>
+        </ul>
+        <ul>
+            <li>gggggggggg</li>
+        </ul>
+        <ul>
+            <li>hhhhhhhhhh</li>
+        </ul>
+        <ul>
+            <li>iiiiiiiiii</li>
+        </ul>
+        <ul>
+            <li>jjjjjjjjjj</li>
+        </ul>
+        <ul>
+            <li>kkkkkkkkkk</li>
+        </ul>
+        <ul>
+            <li>llllllllll</li>
+        </ul>
+        <ul>
+            <li>mmmmmmmmmm</li>
+        </ul>
+        <ul>
+            <li>nnnnnnnnnn</li>
+        </ul>
+        <ul>
+            <li>oooooooooo</li>
+        </ul>
+    </section>
+</body>
+
+</html>
