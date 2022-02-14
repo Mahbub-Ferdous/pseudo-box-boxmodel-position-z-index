@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .swiming div {
+            border: 1px dashed black;
+            width: 300px;
+
+
+        }
+
+        .dummy {
+            background-color: pink;
+            height: 200px;
+        }
+
+        /* Z - Index position explain below:*/
+
+        #ring {
+            /* When elements are positioned, they can overlap other elements.The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).An element can have a positive or negative stack order */
+
+
+            position: relative;
+            /* why we chose position in relative cause we only change little bit position*/
+            top: 0px;
+
+
+            /***  ***/
+        }
+
+        #water {
+            position: relative;
+            top: -75px;
+            z-index: -1;
+            /* negative man diye ulta kaj korate hoy ar ki like top er positive negative maner moto*/
+        }
+
+        #boy {
+            position: relative;
+            top: 75px;
+            z-index: 2;
+        }
+
+        /* mainly z-index use hoy koyekta image thakle k kar upor bosbe tar upor like animated ways of css jeta jetar upor jabe setar index number tar index number er cheye boro dilei hbe ar z-index start hoy 1 theke*/
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is my Heading</h1>
+        <h1>I am learning Position and Z-index</h1>
+    </section>
+    <section class="swiming">
+        <!-- custom attribute in emmet == section[class="className"] then it will be create auto section with class this is happend with custom attribute system in emmet-->
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
