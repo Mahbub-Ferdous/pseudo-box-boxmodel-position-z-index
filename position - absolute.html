@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - absolute</title>
+    <style>
+        .swiming div {
+            border: 1px dashed black;
+            width: 300px;
+
+
+        }
+
+        /* if we give our parent a position then absolute always change with that parent position*/
+
+        .swiming {
+            position: relative;
+        }
+
+        /* absolute position explain below:*/
+
+        #ring {
+            /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling Note: Absolute positioned elements are removed from the normal flow, and can overlap elements */
+            position: absolute;
+            left: 30px;
+            top: -10px;
+            /* - value means ulta kaj korbe*/
+
+
+
+            /*** mainly absolute e amra top,left,bottom,right e tar parent er position wise or parent er position na thakle main page k kendro kore sorate parbo and se sore gele tar jaygay tar porer child dokhol kore nibe  ***/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>This is my Heading</h1>
+        <h1>I am learning Position and Z-index</h1>
+    </section>
+    <section class="swiming">
+        <!-- custom attribute in emmet == section[class="className"] then it will be create auto section with class this is happend with custom attribute system in emmet-->
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
