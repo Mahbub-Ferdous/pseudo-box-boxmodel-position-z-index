@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model CSS</title>
+
+    <style>
+        div {
+            background-color: lightcoral;
+
+            width: 300px;
+            /*we can give width and height cause div is a block elements*/
+            height: 250px;
+            padding-top: 30px;
+            margin-top: 25px;
+            /* block elements to inline element by using display css attribute*/
+        }
+
+        div h2 {
+            background-color: blue;
+        }
+
+        div p {
+            background-color: chartreuse;
+        }
+
+        h1 {
+            background-color: indianred;
+            /* this is the main box model css depends on ==>> border,padding,margin*/
+            border: 20px solid black;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        /* inline elements to block elements by using display css attribute */
+        span {
+            background-color: blue;
+            color: white;
+            height: 200px;
+            width: 180px;
+            display: inline-block;
+
+
+        }
+
+        p {
+            display: inline;
+            /*cause p tag is block elements*/
+        }
+
+        a {
+            background-color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Boro Mama</h1>
+    <h1>Boro Khalu</h1>
+    <span>Boro Vhai</span>
+    <span>Ami</span>
+    <span>Boro Apu</span>
+    <p>this is a paragraph</p>
+    <a href="www.google.com">go to google</a>
+    <a href="www.youtube.com">go to youtube</a>
+    <a href="www.linkedin.com">go to linkedin</a>
+    <div>
+        <h2>room-1</h2>
+        <p>staying someone</p>
+        <!--you can use div*3 multipication emmet cheetsheet -->
+    </div>
+    <div>
+        <h2>room-2</h2>
+        <p>staying someone</p>
+    </div>
+    <div>
+        <h2>room-3</h2>
+        <p>staying someone</p>
+    </div>
+</body>
+
+</html>

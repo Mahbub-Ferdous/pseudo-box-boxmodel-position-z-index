@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Elements</title>
+    <style>
+        h1:hover {
+            color: red;
+            background-color: aqua;
+            font-weight: 700;
+            /*pseudo-class hover using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        input:focus {
+            color: white;
+            background-color: blue;
+            font-weight: 500;
+            /*pseudo-class focus -- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        .middle-in:focus {
+            color: wheat;
+            background-color: red;
+            font-weight: 700;
+            /* pseudo-class focus --- using system like pointer when mouse on that elements then it will be change */
+        }
+
+        a:visited {
+            color: orangered;
+            /* pseudo-class visited --- using system like pointer when mouse on that elements then it will be change */
+        }
+
+        .middle-a:visited {
+            color: chartreuse;
+            /* pseudo-class visited -- using system like pointer when mouse on that elements then it will be change */
+        }
+
+        li:first-child {
+            color: chocolate;
+            /* pseudo-class -- first-child--- using system like pointer when mouse on that elements then it will be change */
+        }
+
+        li:last-child {
+            background-color: palevioletred;
+            /* pseudo-class-- last-child --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        h2:first-child {
+            background-color: blue;
+        }
+
+        h2:last-child {
+            background-color: red;
+        }
+
+        h2:nth-child(2n) {
+            background-color: blueviolet;
+            /* pseudo-class-- nth-child(2n)=jor --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        h2:nth-child(2n+1) {
+            background-color: orangered;
+            /* pseudo-class-- nth-child(2n+1)=bejor --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        p::before {
+            content: 'OUR ';
+            background-color: yellow;
+            color: black;
+            font-size: x-large;
+            /* pseudo-elements-- before --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        p::after {
+            content: ' Hmmmm';
+            background-color: blue;
+            color: white;
+            font-size: smaller;
+            /* pseudo-elements-- after --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        .para::first-letter {
+            font-size: xx-large;
+            color: red;
+            /* pseudo-elements-- first-letter --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        .para::first-line {
+            color: orange;
+            font-variant: small-caps;
+            /* font-variant: small-caps; means all are capital letter and font-variant: capital-caps; means all are small letter*/
+            /* pseudo-elements-- first-line --- using system like pointer when mouse on that elements then it will be change*/
+        }
+
+        .para::selection {
+            background-color: yellow;
+            color: black;
+            font-weight: 600;
+            /* pseudo-elements-- selection --- using system like pointer when mouse on that elements then it will be change*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is normal</h1>
+    <input type="text">
+    <input class="middle-in" type="text">
+    <input type="text">
+    <br>
+    <br>
+    <a href="https://www.google.com/">Go to google</a>
+    <a class="middle-a" href="https://web.programming-hero.com/">Go to programming-hero</a>
+    <a href="https://www.website.com/">Go to website</a>
+    <br>
+    <br>
+    <ul>
+        <li>alia</li>
+        <li>kalia</li>
+        <li>dalia</li>
+        <li>malia</li>
+        <li>falia</li>
+        <li>kolia</li>
+        <li>faria</li>
+        <li>maria</li>
+        <li>huria</li>
+        <li>varia</li>
+    </ul>
+    <br>
+    <br>
+    <div>
+        <h2>owao</h2>
+        <h2>woo</h2>
+        <h2>yahoo</h2>
+        <h2>huhu</h2>
+        <h2>wao</h2>
+        <h2>woohu</h2>
+        <h2>yahuu</h2>
+        <h2>haha</h2>
+    </div>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, sed? Ut, tempore laudantium voluptatibus
+        accusantium, dolore aperiam numquam, mollitia magnam temporibus architecto maiores beatae rerum officia a
+        officiis repellendus eum</p>
+
+
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum minus voluptas fugiat possimus
+        dolorem?Quae,
+        quis nisi at iste sint temporibus, eaque id qui autem, laboriosam accusamus totam rerum ea?</p>
+
+</body>
+
+</html>

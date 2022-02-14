@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Block Elements</title>
+
+    <style>
+        div {
+            background-color: lightcoral;
+
+            width: 300px;
+            /*we can give width and height cause div is a block elements*/
+            height: 250px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 10px;
+
+            /* block elements to inline element by using display css attribute*/
+        }
+
+        h1 {
+            background-color: indianred;
+        }
+
+        /* inline elements to block elements by using display css attribute */
+        span {
+            background-color: blue;
+            color: white;
+            display: block;
+
+        }
+
+        p {
+            display: inline;
+            /*cause p tag is block elements*/
+        }
+
+        a {
+            background-color: green;
+            width: 300px;
+            /* there have no changing height and width cause it is inline only padding and margin use by horizontally*/
+            height: 300px;
+
+            display: inline-block;
+            /* now its behaviour will turn like block and you will give proper css make up like block elements*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Boro Mama</h1>
+    <h1>Boro Khalu</h1>
+    <span>Boro Vhai</span>
+    <span>Ami</span>
+    <span>Boro Apu</span>
+    <p>this is a paragraph</p>
+    <a href="www.google.com">go to google</a>
+    <a href="www.youtube.com">go to youtube</a>
+    <a href="www.linkedin.com">go to linkedin</a>
+    <div>
+        <h1>room-1</h1>
+        <p>staying someone</p>
+        <!--you can use div*3 multipication emmet cheetsheet -->
+    </div>
+    <div>
+        <h1>room-2</h1>
+        <p>staying someone</p>
+    </div>
+    <div>
+        <h1>room-3</h1>
+        <p>staying someone</p>
+    </div>
+</body>
+
+</html>
